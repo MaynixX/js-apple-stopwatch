@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <title>IPhone stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="stopwatchContainer">
+        <div class="timer">
+            00:00,00
+        </div>
+        <div class="buttons">
+            <div class="button grayButton" id="round" onclick="timer.doAction('round')">Круг</div>
+            <div class="button grayButton hidden" id="cancel" onclick="timer.doAction('stop')">Сброс</div>
+            <div class="button redButton hidden" id="stop" onclick="timer.doAction('pause')">Стоп</div>
+            <div class="button greenButton hidden" id="continue" onclick="timer.doAction('continue')">Старт</div>
+            <div class="button greenButton" id="start" onclick="timer.doAction('run')">Старт</div>
+        </div>
+        <ul class="list">
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
